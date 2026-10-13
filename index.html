@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Axiomly — Practical software for small businesses and creators</title>
+<meta name="description" content="Axiomly builds practical software for small businesses and creators. Products: CollabOS and AxiomERP.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%231E3B2C'/%3E%3Cpath d='M132 384 L256 128 L380 384' fill='none' stroke='%23F6F0DC' stroke-width='46' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='196' y1='316' x2='316' y2='316' stroke='%239DBF9A' stroke-width='46' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --forest: #1E3B2C;
+    --forest-deep: #142A1F;
+    --cream: #F6F0DC;
+    --sage: #9DBF9A;
+    --moss: #4F6F52;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: var(--sans); color: var(--forest); background: var(--cream); line-height: 1.6; }
+  a { color: inherit; }
+  a:focus-visible { outline: 3px solid var(--sage); outline-offset: 4px; border-radius: 2px; }
+  .wrap { width: min(1080px, 100% - 3rem); margin-inline: auto; }
+
+  .hero { background: var(--forest); color: var(--cream); padding-bottom: clamp(4rem, 12vw, 9rem); }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding-block: 1.5rem; }
+  .brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; font-family: var(--serif); font-size: 1.35rem; letter-spacing: .01em; }
+  .brand svg { width: 40px; height: 40px; }
+  .nav a.contact { font-size: .95rem; text-decoration: none; border-bottom: 1px solid var(--sage); padding-bottom: 2px; }
+  .hero h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(2.4rem, 7vw, 5rem); line-height: 1.05; letter-spacing: -.02em; margin: clamp(3rem, 9vw, 7rem) 0 1.5rem; max-width: 14ch; }
+  .hero p { font-size: clamp(1.05rem, 2vw, 1.25rem); max-width: 52ch; margin: 0; color: #DCE5D2; }
+
+  .products { padding-block: clamp(3rem, 8vw, 6rem); }
+  .products h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin: 0 0 2rem; }
+  .product { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 1rem 3rem; padding-block: 2rem; border-top: 1px solid var(--moss); }
+  .product:last-of-type { border-bottom: 1px solid var(--moss); }
+  .product h3 { font-family: var(--serif); font-weight: 500; font-size: 1.6rem; margin: 0; }
+  .product .status { display: inline-block; margin-top: .5rem; font-size: .85rem; padding: .15rem .65rem; border: 1px solid var(--moss); border-radius: 999px; }
+  .product p { margin: 0 0 .75rem; max-width: 60ch; }
+  .product p:last-child { margin-bottom: 0; color: var(--moss); }
+
+  .about { padding-bottom: clamp(3rem, 8vw, 6rem); }
+  .about p { font-family: var(--serif); font-size: clamp(1.25rem, 2.6vw, 1.7rem); line-height: 1.4; max-width: 38ch; margin: 0; }
+
+  footer { background: var(--forest-deep); color: var(--cream); padding-block: 3rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.5rem; align-items: end; }
+  footer h2 { font-family: var(--serif); font-weight: 500; font-size: 1.6rem; margin: 0 0 .5rem; }
+  footer a.mail { font-size: 1.1rem; }
+  footer small { color: var(--sage); }
+
+  @media (max-width: 720px) { .product { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#" aria-label="Axiomly home">
+        <svg viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="112" fill="#F6F0DC"/><path d="M132 384 L256 128 L380 384" fill="none" stroke="#1E3B2C" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/><line x1="196" y1="316" x2="316" y2="316" stroke="#4F6F52" stroke-width="46" stroke-linecap="round"/></svg>
+        Axiomly
+      </a>
+      <a class="contact" href="#contact">Get in touch</a>
+    </nav>
+    <h1>Practical software for small businesses and creators.</h1>
+    <p>Axiomly builds tools that take the paperwork off your plate, from brand-deal contracts and invoices to inventory and orders.</p>
+  </div>
+</header>
+
+<main>
+  <section class="products wrap" id="products" aria-labelledby="products-title">
+    <h2 id="products-title">What we're building</h2>
+
+    <article class="product">
+      <div>
+        <h3>CollabOS</h3>
+        <span class="status">In development</span>
+      </div>
+      <div>
+        <p>One place for creators and influencers to manage brand deals.</p>
+        <p>Keep contracts, invoices and usage rights together, so you always know what you agreed to and what you're owed.</p>
+      </div>
+    </article>
+
+    <article class="product">
+      <div>
+        <h3>AxiomERP</h3>
+        <span class="status">In development</span>
+      </div>
+      <div>
+        <p>A simple ERP for small retail and online stores.</p>
+        <p>Run inventory, orders and accounts from one system, without the cost and complexity of enterprise software.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="about wrap" aria-label="About Axiomly">
+    <p>Axiomly is an independent software company based in India, building focused products for people who run their work on small teams.</p>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Talk to us</h2>
+      <a class="mail" href="mailto:hello@axiomly.in">shaikhuzer7576@gmail.com</a>
+    </div>
+    <small>&copy; <span id="y">2026</span> Axiomly. All rights reserved.</small>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
